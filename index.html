@@ -177,7 +177,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-01-25 15:52:10 / 修改时间：16:09:01" itemprop="dateCreated datePublished" datetime="2025-01-25T15:52:10+08:00">2025-01-25</time>
+              <time title="创建时间：2025-01-25 15:52:10 / 修改时间：16:17:48" itemprop="dateCreated datePublished" datetime="2025-01-25T15:52:10+08:00">2025-01-25</time>
             </span>
 
           
@@ -191,27 +191,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="/MLNetObjectDetection/image.png" alt="alt text"></p>
+          <p><img src="/images/MLNetObjectDetection/image.png" alt="alt text"></p>
 <h2 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h2><h3 id="新建VoTT项目"><a href="#新建VoTT项目" class="headerlink" title="新建VoTT项目"></a>新建VoTT项目</h3><ol>
 <li><a target="_blank" rel="noopener" href="https://aka.ms/mlnet-object-detection-tutorial-dataset">下载数据集</a>（其中包含 50 个停车标志图像），然后进行解压缩。</li>
 <li><a target="_blank" rel="noopener" href="https://github.com/Microsoft/VoTT/releases">下载 VoTT</a>（视觉对象标记工具）。</li>
-<li>打开 VoTT，选择“新建项目”。<br><img src="/MLNetObjectDetection/image-1.png" alt="alt text"></li>
+<li>打开 VoTT，选择“新建项目”。<br><img src="/images/MLNetObjectDetection/image-1.png" alt="alt text"></li>
 <li>在“项目设置”中，将“显示名称”更改为“StopSignObjDetection”。</li>
 <li>更改安全令牌，以生成新的安全令牌。</li>
 <li>在“源连接”旁边，选择“添加连接”。</li>
-<li>在“连接设置”中，将源连接的显示名称更改为“StopSignImages”，并选择“本地文件系统”作为提供程序。 对于“文件夹路径”，请选择包含 50 个训练图像的 Stop-Signs 文件夹，然后选择“保存连接”。<br><img src="/MLNetObjectDetection/image-2.png" alt="alt text"></li>
+<li>在“连接设置”中，将源连接的显示名称更改为“StopSignImages”，并选择“本地文件系统”作为提供程序。 对于“文件夹路径”，请选择包含 50 个训练图像的 Stop-Signs 文件夹，然后选择“保存连接”。<br><img src="/images/MLNetObjectDetection/image-2.png" alt="alt text"></li>
 <li>在“项目设置”中，将“源连接”更改为 StopSignImages（刚创建的连接）。</li>
-<li>将“目标连接”也更改为 StopSignImages。 “项目设置”现在应类似于以下屏幕截图：<br><img src="/MLNetObjectDetection/image-3.png" alt="alt text"></li>
+<li>将“目标连接”也更改为 StopSignImages。 “项目设置”现在应类似于以下屏幕截图：<br><img src="/images/MLNetObjectDetection/image-3.png" alt="alt text"></li>
 <li>选择“保存项目”。</li>
 </ol>
 <h3 id="打标"><a href="#打标" class="headerlink" title="打标"></a>打标</h3><p>现在，你应该会看到一个窗口，其中左侧是所有训练图像的预览图像，中间是所选定图像的预览图像，右侧是标记列。 此屏幕是标记编辑器。</p>
 <ol>
-<li>选择“标记”工具栏中的第一个（加号形状）图标，以添加新标记。<br><img src="/MLNetObjectDetection/image-4.png" alt="alt text"></li>
-<li>将标记命名为“Stop-Sign”，然后在键盘上按 Enter 键。<br><img src="/MLNetObjectDetection/image-5.png" alt="alt text"></li>
+<li>选择“标记”工具栏中的第一个（加号形状）图标，以添加新标记。<br><img src="/images/MLNetObjectDetection/image-4.png" alt="alt text"></li>
+<li>将标记命名为“Stop-Sign”，然后在键盘上按 Enter 键。<br><img src="/images/MLNetObjectDetection/image-5.png" alt="alt text"></li>
 <li>单击并拖动鼠标，围绕图像中的每个停车标志绘制一个矩形。 如果无法使用光标绘制矩形，请尝试从顶部的工具栏中选择“绘制矩形”工具，或使用键盘快捷键 R。</li>
 <li>绘制矩形后，选择在前面的步骤中创建的 Stop-Sign 标记，将此标记添加到边界框。</li>
 <li>单击数据集中下一个图像的预览图像，重复此过程。</li>
-<li>继续对每个图像中的每一个停车标志执行步骤 3-4。<br><img src="/MLNetObjectDetection/image-6.gif" alt="alt text"></li>
+<li>继续对每个图像中的每一个停车标志执行步骤 3-4。<br><img src="/images/MLNetObjectDetection/image-6.gif" alt="alt text"></li>
 </ol>
 <h3 id="导出-VoTT-JSON"><a href="#导出-VoTT-JSON" class="headerlink" title="导出 VoTT JSON"></a>导出 VoTT JSON</h3><p>为所有训练图像添加标签后，可以导出文件，以便 Model Builder 使用它进行训练。</p>
 <ol>
@@ -226,18 +226,18 @@
 <li><p>选择“保存导出设置”。</p>
 </li>
 </ol>
-<p><img src="/MLNetObjectDetection/image-6.png" alt="alt text"></p>
+<p><img src="/images/MLNetObjectDetection/image-6.png" alt="alt text"></p>
 <ol start="6">
 <li>返回到“标记编辑器”（形状类似功能区的左侧工具栏中的第二个图标）。 在顶部工具栏中，选择“导出项目”图标（最后一个图标，形状类似包含箭头的框），或使用键盘快捷键 Ctrl+E。</li>
 </ol>
-<p><img src="/MLNetObjectDetection/image-7.png" alt="alt text"></p>
+<p><img src="/images/MLNetObjectDetection/image-7.png" alt="alt text"></p>
 <p>此导出操作将在 Stop-Sign-Images 文件夹中新建一个名为 vott-json-export 的文件夹，并将在此新文件夹中生成名为 StopSignObjDetection-export 的 JSON 文件。 在后续步骤中使用 Model Builder 训练对象检测模型时，你将使用此 JSON 文件。</p>
 <h2 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h2><h3 id="创建控制台应用程序"><a href="#创建控制台应用程序" class="headerlink" title="创建控制台应用程序"></a>创建控制台应用程序</h3><p>在 Visual Studio 中，创建一个名为 StopSignDetection 的 C# .NET Core 控制台应用程序。</p>
 <h3 id="创建-mbconfig-文件"><a href="#创建-mbconfig-文件" class="headerlink" title="创建 mbconfig 文件"></a>创建 mbconfig 文件</h3><ol>
 <li>在“解决方案资源管理器”中，右键单击 StopSignDetection 项目，然后选择“添加”&gt;“机器学习模型…”打开 Model Builder UI。</li>
 <li>在对话框中，将 Model Builder 项目命名为 StopSignDetection，然后单击“添加” 。</li>
 </ol>
-<h3 id="选择方案"><a href="#选择方案" class="headerlink" title="选择方案"></a>选择方案</h3><p>对于此示例，方案为对象检测。 在 Model Builder 的“方案”步骤中，选择“对象检测”方案。<br><img src="/MLNetObjectDetection/image-8.png" alt="alt text"></p>
+<h3 id="选择方案"><a href="#选择方案" class="headerlink" title="选择方案"></a>选择方案</h3><p>对于此示例，方案为对象检测。 在 Model Builder 的“方案”步骤中，选择“对象检测”方案。<br><img src="/images/MLNetObjectDetection/image-8.png" alt="alt text"></p>
 <blockquote>
 <p>如果在方案列表中看不到“对象检测”，则可能需要更新 Model Builder 的版本。</p>
 </blockquote>
@@ -246,14 +246,14 @@
 <p>Model Builder 目前仅接受由 VoTT 生成的 JSON 格式。</p>
 </blockquote>
 <ol>
-<li>选择“输入”部分内的按钮，并使用文件资源管理器查找 StopSignObjDetection-export.json，该内容应位于 Stop-Signs&#x2F;vott-json-export 目录中。<br><img src="/MLNetObjectDetection/image-9.png" alt="alt text"></li>
+<li>选择“输入”部分内的按钮，并使用文件资源管理器查找 StopSignObjDetection-export.json，该内容应位于 Stop-Signs&#x2F;vott-json-export 目录中。<br><img src="/images/MLNetObjectDetection/image-9.png" alt="alt text"></li>
 <li>数据在“数据预览”中正确显示时，选择“下一步”，以转到“训练”步骤。</li>
 </ol>
 <h3 id="定型模型"><a href="#定型模型" class="headerlink" title="定型模型"></a>定型模型</h3><p>下一步是训练模型。<br>在 Model Builder“训练”屏幕中，选择“开始训练”按钮。<br>此时，数据将上传到 Azure 存储，训练过程在 Azure ML 中开始。</p>
 <blockquote>
 <p>训练过程需要一定的时间，并且根据所选计算的大小和数据量，所需时间可能会有所不同。 第一次在 Azure 中对模型进行训练时，由于必须预配资源，训练时间可能稍长。 对于这个包含 50 个图像的示例而言，训练大约需要 16 分钟。<br>可以在 Visual Studio 中选择“监视 Azure 门户中的当前运行”链接，以在 Azure 机器学习门户中跟踪运行进度。<br>训练完成后，选择“下一步”按钮，转到“评估”步骤。</p>
 </blockquote>
-<h3 id="评估模型"><a href="#评估模型" class="headerlink" title="评估模型"></a>评估模型</h3><p>在“评估”屏幕中，可以大致了解训练过程生成的结果，包括模型准确率。<br><img src="/MLNetObjectDetection/image-10.png" alt="alt text"><br>在此示例中，准确率显示 100%，这意味着，数据集中的图像太少，很可能会导致模型过度拟合。<br>可以使用“试用模型”体验，快速检查模型是否按预期工作。<br>选择“浏览图像”，并提供测试图像，最好是模型未在训练过程中使用的图像。<br><img src="/MLNetObjectDetection/image-11.png" alt="alt text"><br>检测到的每个边界框上显示的分数表示检测到的对象的置信度。 例如，在上面的屏幕截图中，围绕停车标志的边界框上的分数表示，该模型对于检测到的对象是停车标志的确定程度为 99%。<br>“分数阈值”可以通过阈值滑块增加或降低，该阈值将根据分数添加和删除检测到的对象。 例如，如果阈值为 .51，则模型将仅显示置信度分数为 .51 或更高的对象。 增加阈值时，你会看到检测到的对象变少，而降低阈值时，你会看到检测到的对象变多。<br>如果对准确率指标不满意，尝试提高准确率的一个简单方法是使用更多的数据。 如果满意，则选择“下一步”链接，以转到 Model Builder 中的“使用”步骤 。</p>
+<h3 id="评估模型"><a href="#评估模型" class="headerlink" title="评估模型"></a>评估模型</h3><p>在“评估”屏幕中，可以大致了解训练过程生成的结果，包括模型准确率。<br><img src="/images/MLNetObjectDetection/image-10.png" alt="alt text"><br>在此示例中，准确率显示 100%，这意味着，数据集中的图像太少，很可能会导致模型过度拟合。<br>可以使用“试用模型”体验，快速检查模型是否按预期工作。<br>选择“浏览图像”，并提供测试图像，最好是模型未在训练过程中使用的图像。<br><img src="/images/MLNetObjectDetection/image-11.png" alt="alt text"><br>检测到的每个边界框上显示的分数表示检测到的对象的置信度。 例如，在上面的屏幕截图中，围绕停车标志的边界框上的分数表示，该模型对于检测到的对象是停车标志的确定程度为 99%。<br>“分数阈值”可以通过阈值滑块增加或降低，该阈值将根据分数添加和删除检测到的对象。 例如，如果阈值为 .51，则模型将仅显示置信度分数为 .51 或更高的对象。 增加阈值时，你会看到检测到的对象变少，而降低阈值时，你会看到检测到的对象变多。<br>如果对准确率指标不满意，尝试提高准确率的一个简单方法是使用更多的数据。 如果满意，则选择“下一步”链接，以转到 Model Builder 中的“使用”步骤 。</p>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>此步骤将包含可用于使用模型的项目模板。 这是一个可选步骤，你可以选择最适合你对如何处理模型的需求的方法。</p>
 <ul>
 <li>控制台应用</li>
