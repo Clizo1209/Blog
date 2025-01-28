@@ -175,10 +175,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-01-25 15:52:10 / 修改时间：16:17:48" itemprop="dateCreated datePublished" datetime="2025-01-25T15:52:10+08:00">2025-01-25</time>
+              <time title="创建时间：2025-01-25 15:52:10" itemprop="dateCreated datePublished" datetime="2025-01-25T15:52:10+08:00">2025-01-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-01-28 16:25:49" itemprop="dateModified" datetime="2025-01-28T16:25:49+08:00">2025-01-28</time>
+              </span>
 
           
 
@@ -196,13 +202,13 @@
 <li><a target="_blank" rel="noopener" href="https://aka.ms/mlnet-object-detection-tutorial-dataset">下载数据集</a>（其中包含 50 个停车标志图像），然后进行解压缩。</li>
 <li><a target="_blank" rel="noopener" href="https://github.com/Microsoft/VoTT/releases">下载 VoTT</a>（视觉对象标记工具）。</li>
 <li>打开 VoTT，选择“新建项目”。<br><img src="/images/MLNetObjectDetection/image-1.png" alt="alt text"></li>
-<li>在“项目设置”中，将“显示名称”更改为“StopSignObjDetection”。</li>
-<li>更改安全令牌，以生成新的安全令牌。</li>
-<li>在“源连接”旁边，选择“添加连接”。</li>
-<li>在“连接设置”中，将源连接的显示名称更改为“StopSignImages”，并选择“本地文件系统”作为提供程序。 对于“文件夹路径”，请选择包含 50 个训练图像的 Stop-Signs 文件夹，然后选择“保存连接”。<br><img src="/images/MLNetObjectDetection/image-2.png" alt="alt text"></li>
-<li>在“项目设置”中，将“源连接”更改为 StopSignImages（刚创建的连接）。</li>
-<li>将“目标连接”也更改为 StopSignImages。 “项目设置”现在应类似于以下屏幕截图：<br><img src="/images/MLNetObjectDetection/image-3.png" alt="alt text"></li>
-<li>选择“保存项目”。</li>
+<li>在项目设置“Project Settings”中，将“显示名称”更改为“StopSignObjDetection”。</li>
+<li>更改安全令牌(Security Token)，以生成新的安全令牌(Generate New Security Token)。</li>
+<li>在源连接“Source Connection”旁边，选择添加连接“Add Connection”。</li>
+<li>在连接设置“Connection Settings”中，将源连接的显示名称(Display Name)更改为“StopSignImages”，并选择本地文件系统“Local File System”作为提供程序(Provider)。 对于文件夹路径“Folder Path”，请选择包含 50 个训练图像的 Stop-Signs 文件夹，然后选择保存连接“Save Connection”。<br><img src="/images/MLNetObjectDetection/image-2.png" alt="alt text"></li>
+<li>在项目设置“Project Settings”中，将源连接“Source Connection”更改为 StopSignImages（刚创建的连接）。</li>
+<li>将目标连接“Target Connection”也更改为 StopSignImages。<br>项目设置“Project Settings”现在应类似于以下屏幕截图：<br><img src="/images/MLNetObjectDetection/image-3.png" alt="alt text"></li>
+<li>选择保存项目“Save Project”。</li>
 </ol>
 <h3 id="打标"><a href="#打标" class="headerlink" title="打标"></a>打标</h3><p>现在，你应该会看到一个窗口，其中左侧是所有训练图像的预览图像，中间是所选定图像的预览图像，右侧是标记列。 此屏幕是标记编辑器。</p>
 <ol>
